@@ -3,51 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HydroVibes – Stay Cool, Stay Hydrated</title>
+  <title>HydroVibes - Giant Beasts</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #f9f9f9;
+      background: #f5f8fa;
       color: #333;
     }
     header {
-      background: #0070ba;
+      background: #111;
       color: #fff;
       padding: 20px;
       text-align: center;
     }
-    .tiktok-button {
-      margin-top: 10px;
+    header h1 {
+      margin: 0;
     }
-    .tiktok-button a {
-      display: inline-block;
-      background: #000;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 30px;
-      font-size: 16px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-    .tiktok-button a:hover {
-      background: #1c1c1c;
+    header p {
+      font-style: italic;
+      font-size: 14px;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 20px;
       background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    .product {
+      margin-bottom: 50px;
     }
     .product-img {
       width: 100%;
+      max-height: 400px;
+      object-fit: contain;
       border-radius: 8px;
     }
     h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
+      font-size: 26px;
+      margin-top: 20px;
     }
     .price {
       color: #28a745;
@@ -59,9 +55,34 @@
       margin-bottom: 20px;
       line-height: 1.6;
     }
+    ul {
+      margin-top: 5px;
+      padding-left: 20px;
+    }
     .paypal-button {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 10px;
+    }
+    .paypal-button input {
+      background: #0070ba;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .tiktok {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .tiktok a {
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
     }
     footer {
       text-align: center;
@@ -76,32 +97,73 @@
 
 <header>
   <h1>HydroVibes</h1>
-  <p>Stay Cool, Stay Hydrated</p>
-  <div class="tiktok-button">
-    <a href="https://www.tiktok.com/@kostisstore" target="_blank">Watch us on TikTok</a>
-  </div>
+  <p>Giant Beasts for Daily Hydration</p>
 </header>
 
 <div class="container">
-  <img src="bottle.jpg" alt="SPIRIT Bottle" class="product-img" />
-  <h1>SPIRIT Gradient Water Bottle (1000ml)</h1>
-  <p class="price">€6.00</p>
-  <p class="description">
-    Stay hydrated in style with the SPIRIT Gradient Water Bottle. With a sleek matte finish,
-    a secure flip-top lid, and a generous 1000ml capacity, it's perfect for workouts, commuting, or daily use.
-  </p>
 
-  <div class="paypal-button">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-      <input type="hidden" name="cmd" value="_xclick">
-      <input type="hidden" name="business" value="kostismpampasm@gmail.com">
-      <input type="hidden" name="item_name" value="SPIRIT Gradient Water Bottle">
-      <input type="hidden" name="amount" value="6.00">
-      <input type="hidden" name="currency_code" value="EUR">
-      <input type="submit" value="Buy Now with PayPal" 
-             style="background:#0070ba; color:#fff; border:none; padding:12px 24px; font-size:16px; border-radius:6px; cursor:pointer;">
-    </form>
+  <!-- Product 1 -->
+  <div class="product">
+    <img src="bottle.jpg" alt="SPIRIT Gradient Bottle" class="product-img" />
+    <h1>SPIRIT Gradient Water Bottle (1000ml / 34oz)</h1>
+    <p class="price">€6.00</p>
+    <p class="description">
+      One of the <strong>‘Giant Beasts’</strong> of hydration, this colorful gradient water bottle is built for lifestyle lovers on the go.
+      With a sleek matte finish, secure flip-top lid, and 1000ml capacity (34oz), it’s perfect for:
+      <ul>
+        <li>Indoor workouts & fitness</li>
+        <li>Daily hydration at school, work or home</li>
+        <li>Outdoor sports, hiking, or weekend camping</li>
+      </ul>
+      Made for men & women who value both function and aesthetics. Take it anywhere, sip in style.
+    </p>
+
+    <div class="paypal-button">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="kostismpampasm@gmail.com">
+        <input type="hidden" name="item_name" value="SPIRIT Gradient Water Bottle">
+        <input type="hidden" name="amount" value="6.00">
+        <input type="hidden" name="currency_code" value="EUR">
+        <input type="submit" value="Buy Now with PayPal">
+      </form>
+    </div>
   </div>
+
+  <!-- Product 2 -->
+  <div class="product">
+    <img src="hydromax.jpg" alt="HYDRO MAX Jug" class="product-img" />
+    <h1>HYDRO MAX Jug (2350ml / 79.5oz)</h1>
+    <p class="price">€8.00</p>
+    <p class="description">
+      Meet the heavyweight champ of hydration — the <strong>HYDRO MAX Jug</strong>. With a massive 2.35L (79.5oz) capacity, this beast keeps you fueled for hours.
+      <br><br>
+      It’s got a rugged design, ergonomic side handle, and a secure screw-top lid — making it ideal for:
+      <ul>
+        <li>Gym sessions & street fitness</li>
+        <li>Outdoor adventures & camping</li>
+        <li>Long workdays or hardcore hydration routines</li>
+      </ul>
+      Designed for both men and women who live active, bold lifestyles. This bottle isn’t just big — it’s iconic.
+    </p>
+
+    <div class="paypal-button">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="kostismpampasm@gmail.com">
+        <input type="hidden" name="item_name" value="HYDRO MAX Jug">
+        <input type="hidden" name="amount" value="8.00">
+        <input type="hidden" name="currency_code" value="EUR">
+        <input type="submit" value="Buy Now with PayPal">
+      </form>
+    </div>
+  </div>
+
+  <!-- TikTok Button -->
+  <div class="tiktok">
+    <a href="https://www.tiktok.com/@yourusername" target="_blank">Follow us on TikTok</a>
+  </div>
+
 </div>
 
 <footer>
